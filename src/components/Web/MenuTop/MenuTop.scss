@@ -1,0 +1,56 @@
+@import "../../../scss/index.scss";
+
+.menu-top-web {
+  position: sticky;
+  top: 0;
+  background-color: $background-dark-web;
+  border: 0;
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+  li {
+    border: 0 !important;
+    font-weight: bold;
+    float: left !important;
+    order: none;
+    
+
+    &:hover {
+      transition: none !important;
+      transform: none !important;
+      border-bottom: 0px solid transparent !important;
+    }
+
+    a {
+      color: #fff !important;
+      font-weight: bold;
+      text-decoration: none;
+      //transition: none !important;
+
+      &:hover {
+        color: $primary-color-hover !important;
+        border-bottom: 0px solid transparent !important;
+      }
+    }
+  }
+
+  &-left_logo {
+    padding: 10px;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+//quita el efecto por defecto del menu
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+  transition: none !important;
+}
+
+.social-links{
+    order: 1001 !important;
+}
